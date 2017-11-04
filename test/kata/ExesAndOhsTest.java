@@ -3,10 +3,6 @@ package kata;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-/**
- *
- * @author mirko
- */
 public class ExesAndOhsTest {
 
     @Test
