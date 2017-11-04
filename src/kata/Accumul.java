@@ -31,15 +31,4 @@ public class Accumul {
         return newWord.toString();
     }
 
-    public static void main(String[] args) {
-
-        System.out.println("Fixed Tests accum");
-        assert (Accumul.accum("ZpglnRxqenU").equals("Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu"));
-        assert (Accumul.accum("NyffsGeyylB").equals("N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb"));
-        assert (Accumul.accum("MjtkuBovqrU").equals("M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu"));
-        assert (Accumul.accum("EvidjUnokmM").equals("E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm"));
-        assert (Accumul.accum("HbideVbxncC").equals("H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc"));
-
-    }
-
 }
