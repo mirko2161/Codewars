@@ -1,7 +1,6 @@
 package kata;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 /**
  * See https://www.codewars.com/kata/the-supermarket-queue
@@ -39,15 +38,13 @@ import java.util.Collections;
 public class SupermarketQueue {
 
     public static int solveSuperMarketQueue(int[] customers, int numOfQueues) {
-        Integer[] queues = new Integer[numOfQueues];
-        for (int i = 0; i < numOfQueues; i++) {
-            queues[i] = new Integer(0);
-        }
+        int[] queues = new int[numOfQueues];
+
         for (Integer customer : customers) {
-            queues[queues.length - 1] += customer; // always add to the smallest queue
-            Arrays.sort(queues, Collections.reverseOrder());
+            queues[0] += customer; // always add to the smallest queue
+            Arrays.sort(queues);
         }
-        return queues[0]; // return biggest queue
+        return queues[queues.length - 1]; // return biggest queue
     }
 
 }
